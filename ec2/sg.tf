@@ -2,7 +2,7 @@ resource "aws_security_group" "allow_mine" {
   name        = "allow_mine"
   description = "Allow TLS inbound traffic"
   # not recomended to hard coded vpc_id
-  vpc_id      = data.terraform_remote_state.vpc.outputs.vpc_id
+  vpc_id      = data.aws_vpc.vpc.id
 
   ingress {
     description      = "Allow port 80"

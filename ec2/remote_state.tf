@@ -7,3 +7,7 @@ data "terraform_remote_state" "vpc" {
     dynamodb_table = "tf-bkt-001_table"
   }
 }
+
+data "aws_vpc" "vpc" {
+  id = data.terraform_remote_state.vpc.outputs.vpc_id
+}
