@@ -1,0 +1,9 @@
+variable "region" {}
+variable "proj_name" {}
+variable "vpc_cidr" {}
+variable "vpc_pub_subnet_az1_cidr" {}
+variable "vpc_pub_subnet_az2_cidr" {}
+variable "vpc_pri_subnet_az1_cidr" {}
+variable "vpc_pri_subnet_az2_cidr" {}
+variable "vpc_pri_subnet_az1_cidr_data" {}
+variable "vpc_pri_subnet_az2_cidr_data" {}
